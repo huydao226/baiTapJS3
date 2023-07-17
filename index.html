@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Bài tập mảng</h2>
+    <div class="form-group">
+      <label for="numbers">Nhập các số nguyên:</label>
+      <input type="text" class="form-control" id="numbers" placeholder="Nhập các số nguyên, cách nhau bằng dấu phẩy">
+    </div>
+    <div class="nhap">
+        <button type="button" class="btn btn-primary" onclick="themSoVaoMang()">Nhập Số</button>
+        <button type="button" class="btn btn-primary" onclick="luuMang()">Nhập Mảng</button>
+    </div>
+    <hr>
+    <div class="mb-3 tinh">
+            <label for="" class="form-label">Tùy chỉnh tính toán: </label>
+            <select class="form-select form-select-lg" name="" id="selector">
+                <option selected>Chọn chức năng</option>
+                <option value="1">Tính tổng các số dương trong mảng</option>
+                <option value="2">Đếm có bao nhiêu số dương trong mảng</option>
+                <option value="3">Tìm số nhỏ nhất trong mảng</option>
+                <option value="4">Tìm số dương nhỏ nhất trong mảng</option>
+                <option value="5">Tìm số chẵn cuối cùng trong mảng</option>
+                <option value="6">Đổi chỗ 2 giá trị trong mảng theo vị trí</option>
+                <option value="7">Sắp xếp mảng theo thứ tự tăng dần</option>
+                <option value="8">Tìm số nguyên tố đầu tiên trong mảng</option>
+                <option value="9">Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên</option>
+                <option value="10">So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn</option>
+            </select>
+    <button type="button" class="btn btn-primary" onclick="tinhToan()">Tính</button>
+    </div>
+    <hr>
+    <div class="array d-flex" style="justify-content: space-between;">
+        <h4 id="currentArray">Mảng hiện tại: </h4>
+        <button type="button" class="btn btn-primary" onclick="tinhToan()">Reset Mảng</button>
+    </div>
+    <hr>
+    <h4 >Kết quả:</h4>
+    <div id="results"></div>
+  </div>
+
+
+</body>
+
+<script src="index.js"></script>
+</html>
